@@ -1,0 +1,16 @@
+{
+	"name": "A simple Website",
+	"version": "0.0.1",
+	"description": "A simple Website.",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+
+	},
+	"engines": {
+		"node": "14.x"
+
+	}
+
+
+}
