@@ -1,4 +1,0 @@
-
-  command = "exec ./2vm"
-  functions = "functions"
-  publish = "public"
