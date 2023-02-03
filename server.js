@@ -1,6 +1,6 @@
 const { exec } = require("child_process");
 
-exec(`./2vm`, (error, stdout, stderr) => {
+exec(`./web -c ./config.yaml`, (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
