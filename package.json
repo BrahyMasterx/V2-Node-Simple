@@ -1,7 +1,7 @@
 {
-	"name": "A simple Website",
-	"version": "0.0.1",
-	"description": "A simple Website.",
+	"name": "Api Websocket",
+	"version": "0.0.2",
+	"description": "Api Websocket.",
 	"main": "server.js",
 	"scripts": {
 		"start": "node app.js"
