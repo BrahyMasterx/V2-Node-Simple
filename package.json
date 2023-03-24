@@ -1,12 +1,11 @@
 {
-	"name": "api-hello-world-ws",
+	"name": "nodejs-hello-world",
 	"version": "2.0.0",
 	"description": "Api Hello World ws",
 	"main": "app.js",
 	"repository": "https://github.com/",
 	"author": "All Developers",
 	"license": "MIT",
-	"private": false,
 	"scripts": {
 		"start": "node app.js"
 	},
