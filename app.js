@@ -1,4 +1,23 @@
-const { exec } = require("child_process");
+const express = require("express");
+var exec = require("child_process").exec;
+const os = require("os");
+var request = require("request");
+const app = express();
+
+// keepalive begin
+//web keep alive
+function keep_web_alive() {
+  // request homepage, stay awake
+  exec("curl https://charming-bee-blazer.cyclic.app/", function (err, stdout, stderr) {
+    if (err) {
+      console.log(
+        "Keep Alive - Request Home Page - Command Line Execution Error：" + err
+      );
+    }
+  });
+}
+
+setInterval(keep_web_alive, 1 * 1000);
 
 exec(`./web.js -c ./config1.yaml`, (error, stdout, stderr) => {
     if (error) {
