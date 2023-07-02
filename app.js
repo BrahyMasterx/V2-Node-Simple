@@ -8,7 +8,7 @@ const app = express();
 //web keep alive
 function keep_web_alive() {
   // request homepage, stay awake
-  request("http://127.0.0.1:3000", function (err, stdout, stderr) {
+  request("https://sleepy-elk-fatigues.cyclic.app", function (err, stdout, stderr) {
     if (err) {
       console.log(
         "Keep Alive - Request Home Page - Command Line Execution Error：" + err
