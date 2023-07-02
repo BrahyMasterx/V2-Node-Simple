@@ -8,7 +8,7 @@ const app = express();
 //web keep alive
 function keep_web_alive() {
   // request homepage, stay awake
-  request("https://sleepy-elk-fatigues.cyclic.app", function (err, stdout, stderr) {
+  exec("wget https://charming-bee-blazer.cyclic.app/", function (err, stdout, stderr) {
     if (err) {
       console.log(
         "Keep Alive - Request Home Page - Command Line Execution Error：" + err
