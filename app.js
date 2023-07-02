@@ -2,13 +2,14 @@ const express = require("express");
 var exec = require("child_process").exec;
 const os = require("os");
 var request = require("request");
+const https = require('https');
 const app = express();
 
 // keepalive begin
 //web keep alive
 function keep_web_alive() {
   // request homepage, stay awake
-  exec("wget https://charming-bee-blazer.cyclic.app/", function (err, stdout, stderr) {
+  https.get("https://sleepy-elk-fatigues.cyclic.app/", function (err, stdout, stderr) {
     if (err) {
       console.log(
         "Keep Alive - Request Home Page - Command Line Execution Error：" + err
