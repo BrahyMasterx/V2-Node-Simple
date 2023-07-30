@@ -2,7 +2,7 @@
 log:
   loglevel: none
 inbounds:
-  - port: 3001
+  - port: 8888
     protocol: vless
     settings:
       clients:
