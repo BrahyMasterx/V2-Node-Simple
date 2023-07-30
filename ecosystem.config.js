@@ -6,11 +6,7 @@ module.exports = {
       },
   {
           "name":"web",
-          "script":"web.js run"
-      },
-      {
-          "name":"argo",
-          "script":"web2.js tunnel --edge-ip-version auto --loglevel panic --protocol auto run --token eyJhIjoiYWQ1NDUwYTgyNTI0M2VhZTE5Y2E0ODI4MWQxNTRiZjIiLCJ0IjoiNjU1MjAxMzctNmEzMC00ZDM1LWExYTItYTIyZDE1YjM4MTNhIiwicyI6Ik5XSXlOR1U1Tm1RdFpXUTRZUzAwWkdFeExUazBNemt0WVdVNFltWTNaR1F6WW1RMiJ9"
+          "script":"node app.js"
       }
   ]
 }
