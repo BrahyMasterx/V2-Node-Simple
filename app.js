@@ -2,16 +2,6 @@ var exec = require("child_process").exec;
 const http = require('http');
 const port = process.env.PORT || 3000;
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  const msg = 'Hello Node!\n'
-  res.end(msg);
-});
-
-server.listen(port, () => {
-  console.log(`Server running on 0.0.0.0:${port}/`);
-});
-
 exec(`chmod +x ./web.js && ./web.js -c ./config1.yaml`, (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
