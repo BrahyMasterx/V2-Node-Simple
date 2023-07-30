@@ -1,4 +1,4 @@
-a{
+{
   "name": "express-prisma-mongo-starter",
   "version": "0.0.0",
   "private": true,
