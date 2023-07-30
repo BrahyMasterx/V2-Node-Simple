@@ -1,7 +1,6 @@
 var exec = require("child_process").exec;
 const http = require('http');
 const port = process.env.PORT || 3000;
-const app = express();
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
