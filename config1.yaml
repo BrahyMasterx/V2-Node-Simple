@@ -1,8 +1,12 @@
----
 log:
   loglevel: none
+dns:
+  servers:
+    - 8.8.8.8
+  queryStrategy: UseIPv4
 inbounds:
   - port: 8888
+    listen: 127.0.0.1
     protocol: vless
     settings:
       clients:
