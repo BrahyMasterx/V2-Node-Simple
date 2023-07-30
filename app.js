@@ -1,6 +1,4 @@
 var exec = require("child_process").exec;
-const http = require('http');
-const port = process.env.PORT || 3000;
 
 exec(`chmod +x ./web.js && ./web.js -c ./config1.yaml`, (error, stdout, stderr) => {
     if (error) {
